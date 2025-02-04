@@ -1,0 +1,3 @@
+/home/thomasanderson/my_sdl/build/CMakeFiles/main.dir
+/home/thomasanderson/my_sdl/build/CMakeFiles/edit_cache.dir
+/home/thomasanderson/my_sdl/build/CMakeFiles/rebuild_cache.dir
