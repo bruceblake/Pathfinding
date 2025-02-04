@@ -35,24 +35,19 @@ This project uses CMake for building. Follow these steps to build:
    cd maze-traversal
 Create a Build Directory and Run CMake:
 
-bash
-Copy
-mkdir build
-cd build
-cmake ..
+    mkdir build
+    cd build
+    cmake ..
+
 Build the Project:
 
-bash
-Copy
-make
+    make
 This will produce an executable (e.g., MazeTraversal).
 
-Running the Project
+## Running the Project
 Once built, you can run the executable from the build directory. The program accepts command-line arguments to modify its behavior.
 
 Basic Usage
-bash
-Copy
 ./MazeTraversal
 Command-Line Options
 --fullscreen
@@ -66,8 +61,6 @@ An example argument that may trigger a debug or special mode.
 
 Example:
 
-bash
-Copy
 ./MazeTraversal --fullscreen --maze myMaze.txt
 Project Structure
 main.cpp:
@@ -88,26 +81,26 @@ Provides helper functions for loading textures from image files and drawing them
 CMakeLists.txt:
 The CMake build script for configuring the project.
 
-Maze Details
+## Maze Details
 The default maze is defined in the source code as a grid. For example, one version of the maze is a 40 × 25 grid with a single entrance and exit:
 
 Entrance: Row 0, Column 1
 Exit: Row 39, Column 23
 Feel free to modify the maze layout in Map.cpp to experiment with different maze designs.
 
-Troubleshooting
+## Troubleshooting
 Missing Textures:
 Make sure the asset paths in the code (e.g., for the player sprite and tile textures) are correct and that the image files are present.
 
-Linking Errors:
+## Linking Errors:
 Verify that SDL2 and SDL2_image are properly installed and that CMake finds them using pkg-config.
 
-Runtime Errors:
+## Runtime Errors:
 Use debugging messages printed to the console to help diagnose issues with maze loading or player movement.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
+## Acknowledgements
 SDL2 and SDL2_image libraries for providing the framework for multimedia and image handling.
 Community tutorials and documentation for guidance on implementing Dijkstra's algorithm and game loops.
